@@ -1,2 +1,68 @@
 @import "bootstrap";
+@import "font-awesome";
 
+body {
+    background: image_url('trees.png');
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    height: 100%;
+    margin: 0;
+  }
+
+.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bolder;
+}
+
+
+#content {
+    overflow: scroll;
+}
+
+/* styles for heading */
+.navbar-brand {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
+.navbar-light .navbar-brand {
+    color: lightslategray;
+    transition: 1s!important;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bolder!important;
+    font-size: 2em!important;
+}
+
+.form-control {
+    width: 90%;
+}
+
+h2 {
+    font-size: 1.5em;
+    transition: 1.0s!important;
+    font-weight: bolder!important;
+}
+
+.difficultyImage {
+    height: 1.5em;
+}
