@@ -64,7 +64,7 @@ function getWeather(trails) {
 
 function renderTrails() {
   if(weatherArray.length === trails.length) {
-    $("#cards").empty();
+    $("#trails").empty();
     for (var i = 0; i < trails.length; i++) {
         var difficultyDesc;
         var difficultyImage;
@@ -95,7 +95,7 @@ function renderTrails() {
                 difficultyImage = "assets/images/dblack.svg";
                 break;
         };
-        var newRow =  "<div class='card-wrapper'>" +
+        var newRow =  "<div class='trail-wrapper'>" +
         
         "<div class='heading-wrapper'>" +
             "<div class='trail-name-wrapper'>" +
@@ -142,7 +142,7 @@ function renderTrails() {
                         "<p>" + "Current conditions: " + "<br>" + weatherArray[i].weather[0].main + "." + "</p>" +
                     "</div>" +
                 "</div>";
-     $("#cards").append(newRow);
+     $("#trails").append(newRow);
     }
   }
 }
