@@ -5,7 +5,7 @@ var placeLng;
 var trails;
 var weatherArray = [];
 var currentTrailWeather;
-
+alert("hello from trails js")
 function initAutocomplete() {
   // Create the autocomplete object, restricting the search to geographical
   // location types.

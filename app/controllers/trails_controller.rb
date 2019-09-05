@@ -11,8 +11,8 @@ class TrailsController < ApplicationController
         #@weatherData.code, @weatherData.message, @weatherData.headers.inspect
 
         puts "--HIKING API IN INDEX FUNCTION ------------------------------------------"
-        @hikingData = HTTParty.get('https://www.hikingproject.com/data/get-trails?lat=33.4152&lon=-111.8315&maxDistance=10&key=200583144-74f526f47bf91dadd7add272542d8019')
-        
+        @hikingData = JSON.parse HTTParty.get('https://www.hikingproject.com/data/get-trails?lat=33.4152&lon=-111.8315&maxDistance=10&key=200583144-74f526f47bf91dadd7add272542d8019').response.body
+        @hikingTrailName= @hikingData["trails"][0]["name"]
     end
 
     def create
