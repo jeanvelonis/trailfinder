@@ -6,16 +6,11 @@
 <body> 
 
 <!-- HERE IS YOUR SEARCH -->
-    <form id="inputForm">
-        <label for="autocomplete"></label>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Enter your location" aria-describedby="button-search" id="autocomplete">
-            <div class="input-group-append">
-                <button class="btn btn-secondary" type="submit" id="button-search">Blaze Your Trail!</button>
-            </div>
-        </div>
-    </form>
-
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter Your Place Details</h1>
+  <%= link_to "Find", trail_path(id:80004), class: 'btn btn-primary' %>
+</div>
+    
 
 <!-- TRAILS WILL DISPLAY HERE -->
 
