@@ -22,7 +22,12 @@ class TrailsController < ApplicationController
         puts "YOURE IN THE SHOW FUNCITON ~~~~~~~~~~~"
         zipCode= params["id"]
         @hikingData = JSON.parse HTTParty.get('https://www.hikingproject.com/data/get-trails?lat=33.4152&lon=-111.8315&maxDistance=10&key=200583144-74f526f47bf91dadd7add272542d8019').response.body
-    
+        
+        @hikingTrailName= @hikingData["trails"][0]["name"]
+        @hikingTrailType= @hikingData["trails"][0]["type"]
+        @hikingTrailDifficulty= @hikingData["trails"][0]["difficulty"]
+        @hikingTrailLat= @hikingData["trails"][0]["latitude"]
+        @hikingTrailLng= @hikingData["trails"][0]["longitude"]
     end
 
 end
