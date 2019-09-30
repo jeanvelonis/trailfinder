@@ -15,7 +15,18 @@ class TrailsController < ApplicationController
 
     def new
         puts "YoURE IN TEH NEW FUNCTION------"
-        puts @trail 
+        puts @trail = Trail.new 
+    end
+
+    def create
+        Trail.create(trail_params)
+    end
+
+    priavate
+
+    def trail_params
+        params.require(:trail).permit(:longitude, :latitude)
+        redirect_to root_path
     end
 
     def show

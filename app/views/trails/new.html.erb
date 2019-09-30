@@ -2,7 +2,8 @@
 <h1>New Trail</h1>
 
     <%= simple_form_for  do |f| %>
-        <%= f.input :location %>
+        <%= f.input :longitude %> 
+        <%= f.input :latitude %> 
         <br />
         <%= f.submit 'Create', class: 'btn btn-primary' %>
     <% end %>

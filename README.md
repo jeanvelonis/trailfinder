@@ -22,3 +22,24 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+Jean’s final project 
+
+Pseudocode
+
+Navigation bar with links to see trails
+
+Search bar to enter in zip code
+
+A list of trails populates when zip code is entered in the search bar
+
+List of trails contains information from the Trails API
+
+Trail Name
+Type
+Summary
+Difficulty
+Location
+Longitude
+Latitude
