@@ -75,6 +75,6 @@ end
 
 gem 'simple_form'
 gem "font-awesome-rails"
-gem 'httparty', '~> 0.17.0'
+gem 'httparty', '~> 0.21.0'
 gem 'rest-client', '~> 2.1'
 gem 'geocoder'
